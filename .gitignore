@@ -1,0 +1,13 @@
+# binary files
+*.pyc
+*~
+*.ipynb
+*myconf*.json
+*.log
+*.json
+
+# dirs
+*.ipynb*
+.venv/
+*log*
+env

@@ -1,0 +1,14 @@
+btn=None
+        btn=xd.find_elements_by_xpath("//div[@id='oc-background-section']/span[@class='background-details']/div/section/div/section[@id='experience-section']/div[@class='pv-experience-section__see-more pv-profile-section__actions-inline ember-view']/button")
+        if(btn):
+            btn[0].click()
+        ss=xd.find_elements_by_xpath("//div[@id='oc-background-section']/span[@class='background-details']/div/section/div/section[@id='experience-section']/ul/li")
+
+        for j in ss :
+            btns=j.find_elements_by_xpath("//section/div/div/div/p/span/button")
+            for bt in btns:
+
+                bt.click()
+        ss=xd.find_elements_by_xpath("//div[@id='oc-background-section']/span[@class='background-details']/div/section/div/section[@id='experience-section']/ul/li")
+        for j in ss:
+            print(j.text)
